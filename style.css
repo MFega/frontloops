@@ -1,0 +1,535 @@
+/*  background: #f3d3bd ; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    margin: 30px;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar{
+     margin-top: -30px;
+     background: hsl(224, 58%, 63%);
+     padding: 30px;
+     width: 60vw;
+     height: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     position: fixed;
+     left: -300px;
+     
+}
+
+.nav-bar ul {
+    margin-top: 70px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-20px); 
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.nav-bar li a:hover{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-bar ul li .contact{
+     background: white;
+     color: hsl(224, 93%, 58%);
+     padding: 10px;
+ }
+
+#check{
+    display: none;
+ }
+
+ label #btn,label #cancel{
+    position: absolute;
+    color: white;
+    z-index: 11111;
+ }
+
+ label #btn{
+    color: rgba(0,0,0,0.8);
+    left: 80%;
+    top: 20px;
+    font-size: 30px;
+    transition: all 0.5s linear;
+ }
+
+ label #cancel{
+    left: -40px;
+    top: 20px;
+    font-size: 30px;
+    transition: all 0.5s linear;
+ }
+
+ #check:checked ~ .nav-bar{
+    left: 200px;
+ }
+
+ #check:checked ~ label #btn{
+    opacity: 0;
+    left: 350px;
+ }
+
+ #check:checked ~ label #cancel{
+    left: 220px;
+ }
+
+  .brand{
+
+ display: flex;   
+}
+
+ .button-2{
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.8);
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    color: white;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+ .centre,.centre-2,.centre-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-1,.image-2{
+    width: 100%;
+}
+
+.image-1{
+    margin-top: 20px;
+}
+
+.image-1 img,.image-2 img{
+    width: 100%;
+}
+
+.content-1,.content-2,.content-3,.content-4{
+    width: 100%;
+}
+
+.content-1 h1,.content-2 h1,.content-3 h1{
+    font-size: 27px;
+    margin: 20px 0;
+    color: rgba(0,0,0,0.8);
+}
+
+.content-3 p{
+    margin-top: -10px;
+    color: rgba(0,0,0,0.7);
+}
+
+.designloops{
+    background-color: #f3d3bd40;
+    padding: 10px;
+    margin-top: 15px;
+   
+}
+
+.designloops p{
+    color: rgba(0,0,0,0.7);
+}
+
+.reasons{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.reasons .fa{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.reason-1,.reason-2{
+    margin-bottom: 20px;
+}
+
+.reasons p{
+    color: rgba(0,0,0,0.7);
+}
+
+.decide{
+    margin-top: 50px;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.image-2{
+    margin: 25px 0;
+    margin-top: 40px;
+}
+
+.steps p{
+    color: rgba(0,0,0,0.7);
+}
+
+.steps h3{
+    color: rgba(0,0,0,0.9);
+    margin-bottom: 7px;
+}
+
+.step-1{
+    display: flex;
+    margin: 15px 0;
+}
+
+.steps .number{
+    color: white;
+    background: black;
+    height: 30px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button-3{
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.8);
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    color: white;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-left: 30px;
+     
+}
+
+
+/* ######packages##### */
+.content-7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.content-7 h1{
+    color: rgba(0,0,0,0.8);
+    font-size: 28px;
+}
+
+.content-7 p{
+    color: rgba(0,0,0,0.9);
+    margin-top: 10px;
+}
+
+.packages{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    padding: 70px;
+    padding-top: 50px;
+}
+
+.package-1{
+    border: 1px solid black;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.intro h1{
+    color: black;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+.intro span{
+    font-size: 25px;
+    transform: translateY(-30px);
+}
+
+.intro p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content-6 p{
+    margin-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: rgba(0,0,0,0.9);
+}
+
+.content-5 p{
+    margin-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:rgba(0,0,0,0.9);
+}
+
+.special{
+    color: red;
+}
+
+.info p{
+    color: black;
+     font-size: 15px; 
+}
+
+.info .fa{
+color: rgb(55, 201, 55);
+font-size: 14px;
+margin-right: 10px;
+}
+
+button{
+    margin-top: 10px;
+}
+
+.button-1{
+
+    background: transparent;
+    color: black;
+    padding: 10px 100px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+     
+}
+
+/* #########Package 2######## */
+.package-2{
+    border: none;
+    padding: 20px;
+    color: black;
+    position: relative;
+    background: #f3d3bd40;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.package-2::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: 'Popular';
+    color: black;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    top: 20px;
+    left: 60%;
+    border: 1px solid black;
+}
+
+/* #######Package 3###### */
+.package-3{
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    color: black;
+    margin-top: 70px;
+    background: #f3d3bd40;
+}
+
+.button-4{
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+.button-6{
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 40px;
+    background: transparent;
+}
+ @media screen and (min-width:768px){
+    .nav-bar{
+        margin-top: initial;
+        background: none;
+        padding: initial;
+        width: initial;
+        height: initial;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        position: initial;
+        left: initial;
+    }
+
+    .nav-bar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .nav-bar li a{
+         margin-right: 50px;
+         margin-top: 0px;
+         margin-top: -10px;
+         color: black;
+    }
+
+.nav-bar ul li a:focus{
+    font-weight: bold;
+}
+
+    .nav-bar ul li .contact{
+        border-bottom:1px solid hsl(224, 93%, 58%) ;
+        color: hsl(224, 93%, 58%);
+        padding: initial;
+     }
+
+label #btn,label #cancel{
+    display: none;
+}
+
+.image-1{
+    margin: 30px 0 15px 0;
+}
+
+.image-1 img{
+    width: 40%;
+}
+
+.content-1 h1{
+    font-size: 35px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.content-3 h1,.content-2 h1{
+font-size: 34px;
+}
+
+.content-1 p,.content-3 p{
+    font-size: 19px;
+    width: 30%;
+    margin: 10px auto;
+}
+
+.content-2 p{
+    margin-bottom: 15px;
+    width: 40%;
+    margin: -5px auto 0 auto;
+}
+
+.designloops{
+    padding: 20px;
+    margin-top: 50px;
+    margin: 50px 50px 15px 50px;
+}
+
+.designloops p{
+    font-size: 19px;
+    }
+
+.reasons{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.decide{
+    padding: 70px;
+    padding-top: initial;
+}
+
+.decide p{
+    font-size: 19px;
+}
+
+.steps{
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-2{
+    width: 60%;
+}
+
+.image-2 svg{
+    width: 100%;
+    transform: scale(1.3);
+}
+
+.image-2 img{
+    width: 90%;
+}
+
+.steps-item{
+    margin-left: 0px;
+    width: 50%;
+}
+
+.packages{
+    flex-direction: row;
+}
+
+.package-2,.package-3{
+    margin-top: initial;
+    margin-left: 20px;
+}
+
+.button-4,.button-6{
+    width: 350px;
+}
+
+ }
